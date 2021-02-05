@@ -35,6 +35,11 @@ public class UkuleleTest {
         assertEquals(100.00, ukulele.getPurchasePrice(), 0.1);
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Triiing", ukulele.play());
+    }
+
 
 
 

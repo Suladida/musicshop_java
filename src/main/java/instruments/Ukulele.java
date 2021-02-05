@@ -6,7 +6,7 @@ public class Ukulele extends Instrument implements IPlay {
         super("Ukulele", colour, material, purchasePrice);
     }
 
-    public String play(String sound) {
+    public String play() {
         return "Triiing";
     }
 
