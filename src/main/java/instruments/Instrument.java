@@ -1,14 +1,14 @@
+package instruments;
+
 public abstract class Instrument {
 
     private String type;
-    private String sound;
     private String colour;
     private String material;
-    private Float purchasePrice;
+    private Double purchasePrice;
 
-    public Instrument(String type, String sound, String colour, String material, Float purchasePrice){
+    public Instrument(String type, String colour, String material, Double purchasePrice){
         this.type = type;
-        this.sound = sound;
         this.colour = colour;
         this.material = material;
         this.purchasePrice = purchasePrice;
@@ -38,11 +38,11 @@ public abstract class Instrument {
         this.material = material;
     }
 
-    public Float getPurchasePrice() {
+    public Double getPurchasePrice() {
         return purchasePrice;
     }
 
-    public void setPurchasePrice(Float purchasePrice) {
+    public void setPurchasePrice(Double purchasePrice) {
         this.purchasePrice = purchasePrice;
     }
 }
