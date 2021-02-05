@@ -12,7 +12,7 @@ public class UkuleleTest {
 
     @Before
     public void before(){
-        ukulele = new Ukulele( "purple", "wood", 100.00);
+        ukulele = new Ukulele( "purple", "wood", 100.00, 200.00);
     }
 
     @Test

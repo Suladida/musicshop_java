@@ -6,12 +6,14 @@ public abstract class Instrument {
     private String colour;
     private String material;
     private Double purchasePrice;
+    private Double sellingPrice;
 
-    public Instrument(String type, String colour, String material, Double purchasePrice){
+    public Instrument(String type, String colour, String material, Double purchasePrice, Double sellingPrice){
         this.type = type;
         this.colour = colour;
         this.material = material;
         this.purchasePrice = purchasePrice;
+        this.sellingPrice = sellingPrice;
     }
 
     public String getType() {

@@ -13,7 +13,7 @@ public class DrumkitTest {
 
     @Before
     public void before(){
-        drumkit = new Drumkit( "yellow", "metal", 200.00);
+        drumkit = new Drumkit( "yellow", "metal", 200.00, 500.00);
     }
 
     @Test
