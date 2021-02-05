@@ -1,3 +1,5 @@
+package instrumentsTest;
+
 import instruments.Ukulele;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,6 +19,23 @@ public class UkuleleTest {
     public void canGetType(){
         assertEquals("Ukulele", ukulele.getType());
     }
+
+    @Test
+    public void canGetColour(){
+        assertEquals("purple", ukulele.getColour());
+    }
+
+    @Test
+    public void canGetMaterial(){
+        assertEquals("wood", ukulele.getMaterial());
+    }
+
+    @Test
+    public void canGetPurchasePrice(){
+        assertEquals(100.00, ukulele.getPurchasePrice(), 0.1);
+    }
+
+
 
 
 
