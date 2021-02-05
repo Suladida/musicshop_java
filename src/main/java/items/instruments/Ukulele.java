@@ -1,11 +1,13 @@
 package items.instruments;
 
+import items.Types;
+
 public class Ukulele extends Instrument implements IPlay {
 
     int strings;
 
     public Ukulele(String colour, String material, Double purchasePrice, Double sellingPrice){
-        super("String", colour, material, purchasePrice, sellingPrice);
+        super(Types.STRINGS, colour, material, purchasePrice, sellingPrice);
         strings = 4;
     }
 

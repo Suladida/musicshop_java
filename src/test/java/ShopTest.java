@@ -1,3 +1,5 @@
+import items.accessories.Accessory;
+import items.accessories.Strings;
 import items.instruments.Bass;
 import items.instruments.Guitar;
 import items.instruments.Instrument;
@@ -54,6 +56,15 @@ public class ShopTest {
         assertEquals(250.00, instrument.calculateMarkup(), 0.1);
     }
 
+    @Test
+    public void canCalculateTotalMarkup(){
+        Instrument instrument = new Bass( "green", "wood", 200.00,400.00);
+        Instrument instrument2 = new Guitar( "blue", "wood", 200.00,400.00);
+        Accessory accessory = new Strings("Bass", "White","plastic",4.50, 12.00);
+        shop.addStock(instrument);
+        shop.addStock(instrument2);
+        shop.addStock(accessory);
+        assertEquals(407.50, shop.calculateTotalMarkup(), 0.1);
+        };
 
-
-}
+    }

@@ -1,5 +1,6 @@
 import com.sun.tools.javac.jvm.Items;
 import items.ISell;
+import items.accessories.Accessory;
 import items.instruments.Instrument;
 
 import java.util.ArrayList;
@@ -27,16 +28,22 @@ public class Shop {
         return stock;
     }
 
-    public void addStock(Instrument instrument) {
-        stock.add(instrument);
+    public void addStock(ISell iSell) {
+        stock.add(iSell);
     }
 
-    public void removeStock(Instrument instrument){
-        stock.remove(instrument);
+    public void removeStock(ISell iSell){
+        stock.remove(iSell);
     }
 
     public Double calculateMarkup(ISell iSell){
         return iSell.calculateMarkup();
     }
 
+    public double calculateTotalMarkup() {
+        Double markupTotal = 0.0;
+        for (ISell item : stock) {
+            markupTotal = markupTotal + item.calculateMarkup();
+        } return markupTotal;
+    }
 }

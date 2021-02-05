@@ -1,5 +1,6 @@
 package itemsTest.instrumentsTest;
 
+import items.Types;
 import items.instruments.Ukulele;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class UkuleleTest {
 
     @Test
     public void canGetType(){
-        assertEquals("String", ukulele.getType());
+        assertEquals(Types.STRINGS, ukulele.getType());
     }
 
     @Test

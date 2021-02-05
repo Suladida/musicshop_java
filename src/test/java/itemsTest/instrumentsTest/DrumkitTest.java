@@ -1,5 +1,6 @@
 package itemsTest.instrumentsTest;
 
+import items.Types;
 import items.instruments.Drumkit;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class DrumkitTest {
 
     @Test
     public void canGetType(){
-        assertEquals("Percussion", drumkit.getType());
+        assertEquals(Types.PERCUSSION, drumkit.getType());
     }
 
     @Test

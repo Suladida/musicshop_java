@@ -1,16 +1,17 @@
 package items.instruments;
 
 import items.ISell;
+import items.Types;
 
 public abstract class Instrument implements IPlay, ISell {
 
-    private String type;
+    private Enum<Types> type;
     private String colour;
     private String material;
     private Double purchasePrice;
     private Double sellingPrice;
 
-    public Instrument(String type, String colour, String material, Double purchasePrice, Double sellingPrice){
+    public Instrument(Enum<Types> type, String colour, String material, Double purchasePrice, Double sellingPrice){
         this.type = type;
         this.colour = colour;
         this.material = material;
@@ -18,11 +19,11 @@ public abstract class Instrument implements IPlay, ISell {
         this.sellingPrice = sellingPrice;
     }
 
-    public String getType() {
+    public Enum<Types> getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Enum<Types> type) {
         this.type = type;
     }
 
