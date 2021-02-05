@@ -13,7 +13,6 @@ public class Shop {
     public Shop(String name){
         this.name = name;
         this.stock = new ArrayList<ISell>();
-
     }
 
     public String getName() {
