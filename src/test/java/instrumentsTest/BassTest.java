@@ -1,48 +1,49 @@
 package instrumentsTest;
 
+import instruments.Bass;
 import instruments.Ukulele;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class UkuleleTest {
+public class BassTest {
 
-    Ukulele ukulele;
+    Bass bass;
 
     @Before
     public void before(){
-        ukulele = new Ukulele( "purple", "wood", 100.00);
+        bass = new Bass( "blue", "wood", 250.00);
     }
 
     @Test
     public void canGetType(){
-        assertEquals("Ukulele", ukulele.getType());
+        assertEquals("Bass", bass.getType());
     }
 
     @Test
     public void canGetColour(){
-        assertEquals("purple", ukulele.getColour());
+        assertEquals("blue", bass.getColour());
     }
 
     @Test
     public void canGetMaterial(){
-        assertEquals("wood", ukulele.getMaterial());
+        assertEquals("wood", bass.getMaterial());
     }
 
     @Test
     public void canGetPurchasePrice(){
-        assertEquals(100.00, ukulele.getPurchasePrice(), 0.1);
+        assertEquals(250.00, bass.getPurchasePrice(), 0.1);
     }
 
     @Test
     public void canGetStrings(){
-        assertEquals(4, ukulele.getStrings());
+        assertEquals(4, bass.getStrings());
     }
 
     @Test
     public void canPlay(){
-        assertEquals("Triiing", ukulele.play());
+        assertEquals("Doooom", bass.play());
     }
 
 
