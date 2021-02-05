@@ -5,7 +5,7 @@ public class Bass extends Instrument implements IPlay {
     int strings;
 
     public Bass(String colour, String material, Double purchasePrice){
-        super("Bass", colour, material, purchasePrice);
+        super("String", colour, material, purchasePrice);
         strings = 4;
     }
 

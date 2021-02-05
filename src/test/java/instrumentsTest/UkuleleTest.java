@@ -17,7 +17,7 @@ public class UkuleleTest {
 
     @Test
     public void canGetType(){
-        assertEquals("Ukulele", ukulele.getType());
+        assertEquals("String", ukulele.getType());
     }
 
     @Test

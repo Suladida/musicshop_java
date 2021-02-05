@@ -18,7 +18,7 @@ public class DrumkitTest {
 
     @Test
     public void canGetType(){
-        assertEquals("Drumkit", drumkit.getType());
+        assertEquals("Percussion", drumkit.getType());
     }
 
     @Test

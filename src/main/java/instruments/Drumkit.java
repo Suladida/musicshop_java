@@ -5,7 +5,7 @@ public class Drumkit extends Instrument implements IPlay {
     int drums;
 
     public Drumkit(String colour, String material, Double purchasePrice){
-        super("Drumkit", colour, material, purchasePrice);
+        super("Percussion", colour, material, purchasePrice);
         drums = 5;
     }
 

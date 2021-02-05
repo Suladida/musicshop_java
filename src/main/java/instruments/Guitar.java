@@ -5,7 +5,7 @@ public class Guitar extends Instrument implements IPlay {
     int strings;
 
     public Guitar(String colour, String material, Double purchasePrice){
-        super("Guitar", colour, material, purchasePrice);
+        super("String", colour, material, purchasePrice);
         strings = 6;
     }
 

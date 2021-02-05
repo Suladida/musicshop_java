@@ -18,7 +18,7 @@ public class BassTest {
 
     @Test
     public void canGetType(){
-        assertEquals("Bass", bass.getType());
+        assertEquals("String", bass.getType());
     }
 
     @Test
