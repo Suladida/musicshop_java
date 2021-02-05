@@ -36,6 +36,17 @@ public class UkuleleTest {
     }
 
     @Test
+    public void canGetSellingPrice(){
+        assertEquals(200.00, ukulele.getSellingPrice(), 0.1);
+    }
+
+    @Test
+    public void canCalculateMarkUp(){
+        assertEquals(100.00, ukulele.calculateMarkup(), 0.1);
+    }
+
+
+    @Test
     public void canGetStrings(){
         assertEquals(4, ukulele.getStrings());
     }

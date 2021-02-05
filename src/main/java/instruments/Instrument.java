@@ -1,6 +1,6 @@
 package instruments;
 
-public abstract class Instrument {
+public abstract class Instrument implements IPlay, ISell {
 
     private String type;
     private String colour;
@@ -47,4 +47,13 @@ public abstract class Instrument {
     public void setPurchasePrice(Double purchasePrice) {
         this.purchasePrice = purchasePrice;
     }
+
+    public Double getSellingPrice(){
+        return sellingPrice;
+    }
+
+    public Double calculateMarkup() {
+        return sellingPrice - purchasePrice;
+    }
+
 }

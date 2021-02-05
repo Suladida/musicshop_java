@@ -14,6 +14,4 @@ public class Bass extends Instrument implements IPlay {
     }
 
     public int getStrings(){return strings;}
-
-
 }

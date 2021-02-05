@@ -37,6 +37,12 @@ public class BassTest {
     }
 
     @Test
+    public void canGetSellingPrice(){
+        assertEquals(400.00, bass.getSellingPrice(), 0.1);
+    }
+
+
+    @Test
     public void canGetStrings(){
         assertEquals(4, bass.getStrings());
     }
@@ -44,6 +50,11 @@ public class BassTest {
     @Test
     public void canPlay(){
         assertEquals("Doooom", bass.play());
+    }
+
+    @Test
+    public void canCalculateMarkUp(){
+        assertEquals(150.00, bass.calculateMarkup(), 0.1);
     }
 
 

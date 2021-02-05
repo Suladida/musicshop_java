@@ -46,6 +46,11 @@ public class DrumkitTest {
         assertEquals("Boooom", drumkit.play());
     }
 
+    @Test
+    public void canCalculateMarkUp(){
+        assertEquals(300.00, drumkit.calculateMarkup(), 0.1);
+    }
+
 
 
 

@@ -15,5 +15,4 @@ public class Drumkit extends Instrument implements IPlay {
 
     public int getDrums(){return drums;}
 
-
 }

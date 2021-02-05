@@ -39,6 +39,11 @@ public class GuitarTest {
     @Test
     public void canGetStrings(){ assertEquals(6, guitar.getStrings()); }
 
+    @Test
+    public void canCalculateMarkUp(){
+        assertEquals(200.00, guitar.calculateMarkup(), 0.1);
+    }
+
 
 
 
